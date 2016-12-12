@@ -18,6 +18,6 @@
               = link_to like_pin_path(@pin), method: :put, class: "btn btn-default" do
                 %span.glyphicon.glyphicon-heart
                 = @pin.get_upvotes.size
-              - if @pin.user == current_user
+              - if correct_user
                 = link_to "Edit", edit_pin_path, class:"btn btn-default"
                 = link_to "Delete", pin_path, method: :delete, data: { confirm: "Are you sure you want to delete this pin?" }, class:"btn btn-default"
