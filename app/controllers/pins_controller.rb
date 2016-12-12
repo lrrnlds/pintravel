@@ -1,5 +1,7 @@
 class PinsController < ApplicationController
   before_action :find_pin, only: [:show, :edit, :update, :destroy, :upvote]
+  before_action :require_permission, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @pins = Pin.all.order("created_at DESC")
@@ -50,6 +52,12 @@ private
 
   def find_pin
     @pin = Pin.find(params[:id])
+  end
+
+  def require_permission
+    if current_user != Pin.find(params[:id]).user
+      render 'nope'
+    end
   end
 
 end
