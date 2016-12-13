@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Pinterest
+    %title Pin Travel
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
@@ -10,7 +10,7 @@
     -#navbar is from bootstrap!
     %nav.navbar.navbar-default
       .container
-        .navbar-brand= link_to 'Pin Board', root_path
+        .navbar-brand= link_to 'Pin Travel Board', root_path
 
         - if user_signed_in?
           %ul.nav.navbar-nav.navbar-right
