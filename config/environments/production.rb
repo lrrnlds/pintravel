@@ -88,8 +88,8 @@ Rails.application.configure do
     storage: :s3,
     s3_credentials: {
       bucket: 'pintravel',
-      access_key_id: 'AKIAIY5A3REK76JUWFFQ',
-      secret_access_key: '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',
+      access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
+      secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
       s3_region: 'Oregon',
     }
   }
