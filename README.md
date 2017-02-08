@@ -1,24 +1,25 @@
-# README
+# [Pinboard Travel](http://pinboardtravel.herokuapp.com/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Mapper application that allows users to post pictures from their trips around the world**
 
-Things you may want to cover:
+![Pinboard Travel Snapshot](/public/pinboardtravel.png)
 
-* Ruby version
+*Designed the UI/UX (mockups, wireframes, and site layout) using custom built Bootstrap theme, Sass, and CSS3
 
-* System dependencies
+*Allowed users to upload photos and incorporated AWS S3 buckets with endpoints to render image files
 
-* Configuration
+*Currently integrating Google Maps API to create a visual map for users to track their travels.  To contribute, please email me or create a pull request. :)
 
-* Database creation
 
-* Database initialization
+## Authored by
 
-* How to run the test suite
+* Laura Reynolds ([@lrrnlds](http://github.com/lrrnlds))
 
-* Services (job queues, cache servers, search engines, etc.)
+<!-- ## MVP functionalities
 
-* Deployment instructions
+*
 
-* ...
+
+## App Usage Flow TBU
+
+*  -->
